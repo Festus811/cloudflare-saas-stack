@@ -66,7 +66,7 @@ Want to add a backend hono worker, or a python backend? sure! Just put it in the
 there's no environment variables.
 want to use database? just env.DB. Want a Key-value instance? env.KV. want a queue? env.Queue.
 
-want AI? env. AI
+want AI??? env. AI
 
 tools are incredible. there's wrangler - you can use wrangler to create/delete databases run migrations and all sorts.
 
