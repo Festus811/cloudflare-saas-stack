@@ -52,7 +52,7 @@ GOOGLE_CLIENT_ID=${your-google-client-id}
 GOOGLE_CLIENT_SECRET=${your-google-client-secret}
 NEXTAUTH_SECRET=${your-secret}
 ```
-4. In `apps/web`, run this command to make migrations to setup auth with database: `bunx wrangler d1 execute ${dbName} --local --file=migrations/0000_setup.sql`. This creates a local version of the database and creates the appropriate tables.
+4. In `apps/web`, run this command to make migrations to setup auth with database: `bunx wrangler d1 execute ${dbName} --local --file=migrations/0000_setup.sql`. This creates a local version of the database  creates the appropriate tables.
 5. Run remote migration for the production database - same command but replace `--local` with `--remote`: `bunx wrangler d1 execute ${dbName} --remote --file=migrations/0000_setup.sql`
 6. Bun `bun run dev` to start the development server.
 7. Run `bun run deploy` to deploy to Cloudflare.
@@ -66,7 +66,7 @@ Want to add a backend hono worker, or a python backend? sure! Just put it in the
 there's no environment variables.
 want to use database? just env.DB. Want a Key-value instance? env.KV. want a queue? env.Queue.
 
-want AI??? env. AI
+want AI? env. AI
 
 tools are incredible. there's wrangler - you can use wrangler to create/delete databases run migrations and all sorts.
 
